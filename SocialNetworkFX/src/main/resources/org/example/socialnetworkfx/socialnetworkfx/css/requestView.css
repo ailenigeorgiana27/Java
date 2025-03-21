@@ -1,0 +1,96 @@
+/* Overall Background and Font Styles */
+.root {
+    -fx-background-color: #f4f7fa;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 14px;
+    -fx-padding: 20px;
+    -fx-background-insets: 10;
+    -fx-border-radius: 8px;
+    -fx-effect: innershadow(gaussian, #dddddd, 10, 0.5, 0, 0);
+}
+
+/* VBox and HBox Spacing */
+.VBox {
+    -fx-spacing: 20px;
+    -fx-alignment: center;
+}
+
+.HBox {
+    -fx-spacing: 10px;
+    -fx-alignment: center-left;
+}
+
+/* Input Fields Styling */
+#firstnameText, #lastnameText {
+    -fx-background-color: white;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 10px;
+    -fx-padding: 8px;
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+    -fx-prompt-text-fill: #aaa;
+    -fx-focus-color: transparent;
+    -fx-background-insets: 0 0 5 0;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 5, 0.5, 0, 2);
+}
+
+#firstnameText:focused, #lastnameText:focused {
+    -fx-border-color: #4CAF50;
+    -fx-background-color: #e8f5e9;
+    -fx-text-fill: #2E7D32;
+}
+
+/* Label Styling */
+.Label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #666;
+    -fx-padding: 5px;
+    -fx-alignment: center-left;
+}
+
+/* Send Button Styling */
+.send-button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 12px 20px;
+    -fx-background-radius: 5px;
+    -fx-border-width: 0;
+    -fx-transition: background-color 0.3s ease, transform 0.2s ease;
+    -fx-cursor: hand;
+}
+
+.send-button:hover {
+    -fx-background-color: #45a049;
+    -fx-transform: scale(1.05);
+}
+
+.send-button:pressed {
+    -fx-background-color: #387c39;
+    -fx-transform: scale(0.95);
+}
+
+/* Failure Message Styling */
+#failMessage {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: red;
+    -fx-opacity: 0;
+    -fx-transition: opacity 0.5s ease, transform 0.3s ease;
+    -fx-transform: translateY(-20px);
+}
+
+#failMessage:visible {
+    -fx-opacity: 1;
+    -fx-transform: translateY(0);
+}
+
+/* ImageView Styling */
+ImageView {
+    -fx-border-radius: 50%;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0.5, 2, 2);
+}
+
+ImageView:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 15, 0.5, 4, 4);
+}

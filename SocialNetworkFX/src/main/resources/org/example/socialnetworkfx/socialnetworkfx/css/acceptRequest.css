@@ -1,0 +1,87 @@
+/* Global Styles */
+.root {
+    -fx-background-color: #f0f4f8; /* Background light blue */
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 14px;
+}
+
+/* TableView Styling */
+.table-view {
+    -fx-background-color: white;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 8px;
+    -fx-font-size: 14px;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-table-cell-border-color: #ddd;
+    -fx-padding: 10px;
+    -fx-selection-bar: #a1c4fd;
+}
+
+.table-view .column-header {
+    -fx-background-color: #4CAF50; /* Green */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.table-view .table-cell {
+    -fx-padding: 10px;
+    -fx-border-color: #ddd;
+}
+
+.table-view .table-cell:filled {
+    -fx-background-color: #fafafa;
+}
+
+.table-view .table-row-cell:hover {
+    -fx-background-color: #e0f7fa; /* Hover effect */
+}
+
+/* Button Styling */
+.action-button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-border-radius: 5px;
+    -fx-padding: 10px;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+    -fx-transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+    -fx-background-color: #45a049; /* Darker green on hover */
+}
+
+.action-button:pressed {
+    -fx-background-color: #387c39; /* Darkest green on press */
+}
+
+/* Label Styling */
+#showMessage {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #e74c3c; /* Red */
+    -fx-opacity: 0; /* Hidden by default */
+    -fx-transition: opacity 0.5s ease;
+}
+
+/* Layout Styling */
+.AnchorPane {
+    -fx-padding: 20px;
+}
+
+#tableView {
+    -fx-border-radius: 10px;
+    -fx-effect: dropshadow(gaussian, #333, 10, 0.5, 0, 0);
+}
+
+#acceptButton, #rejectButton {
+    -fx-background-radius: 5px;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+/* Message label when visible */
+#showMessage:visible {
+    -fx-opacity: 1;
+}

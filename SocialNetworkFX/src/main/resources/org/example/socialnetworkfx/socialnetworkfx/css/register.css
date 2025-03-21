@@ -1,0 +1,67 @@
+/* Background for the registration screen */
+AnchorPane {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #bbdefb); /* White to soft blue gradient */
+    -fx-padding: 20px;
+}
+
+/* Title styling */
+Label.registration-title {
+    -fx-font-family: "Segoe UI Bold", sans-serif;
+    -fx-font-size: 28px;
+    -fx-text-fill: #1e88e5; /* Light blue */
+    -fx-padding: 10px 0;
+}
+
+/* Input container */
+VBox {
+    -fx-background-color: rgba(255, 255, 255, 0.9);
+    -fx-border-radius: 12px;
+    -fx-padding: 20px;
+    -fx-border-color: #42a5f5;
+    -fx-border-width: 1px;
+    -fx-background-radius: 12px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0.25, 2, 4);
+}
+
+/* Input fields */
+TextField, PasswordField {
+    -fx-background-color: white;
+    -fx-border-color: #b0bec5;
+    -fx-border-radius: 6px;
+    -fx-padding: 10px;
+    -fx-font-size: 14px;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-prompt-text-fill: #78909c;
+}
+
+/* Focus effect for text fields */
+TextField:focused, PasswordField:focused {
+    -fx-border-color: #1e88e5;
+}
+
+/* Button styling */
+Button {
+    -fx-background-color: #42a5f5;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 10px;
+    -fx-cursor: hand;
+}
+
+Button:hover {
+    -fx-background-color: #1e88e5;
+}
+
+Button:pressed {
+    -fx-background-color: #1565c0;
+}
+
+/* Error message styling */
+.error-text {
+    -fx-text-fill: #f44336; /* Red color for error */
+    -fx-font-size: 15px;
+    -fx-font-family: "Century Gothic Bold";
+    -fx-alignment: CENTER;
+}

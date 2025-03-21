@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="354.0" stylesheets="@css/login.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.socialnetworkfx.socialnetworkfx.controller.AcceptRequest">
+    <children>
+        <TableView fx:id="tableView" layoutX="99.0" layoutY="44.0" prefHeight="283.0" prefWidth="409.0">
+            <columns>
+                <TableColumn fx:id="firstnameColumn" prefWidth="99.0" text="First name" />
+                <TableColumn fx:id="lastnameColumn" minWidth="0.0" prefWidth="91.79997253417969" text="Last name" />
+                <TableColumn fx:id="dateColumn" prefWidth="119.4000244140625" text="Date sent" />
+                <TableColumn fx:id="statusColumn" prefWidth="106.79998779296875" text="Status" />
+            </columns>
+        </TableView>
+        <Button fx:id="acceptButton" layoutX="99.0" layoutY="328.0" mnemonicParsing="false" onAction="#handleAccept" prefHeight="26.0" prefWidth="110.0" style="-fx-background-color: green;" text="Accept" />
+        <Button fx:id="rejectButton" layoutX="240.0" layoutY="328.0" mnemonicParsing="false" onAction="#handleDecline" prefHeight="26.0" prefWidth="110.0" style="-fx-background-color: green;" text="Reject" />
+        <Label fx:id="showMessage" layoutX="386.0" layoutY="369.0" prefHeight="18.0" prefWidth="221.0" />
+        <Button fx:id="sendRequestButton" layoutX="386.0" layoutY="328.0" mnemonicParsing="false" onAction="#handleSend" prefHeight="27.0" prefWidth="134.0" style="-fx-background-color: green;" text="Send a request" />
+    </children>
+</AnchorPane>
